@@ -55,17 +55,17 @@ Notifies clients in real-time about flight updates (e.g., price, seat availabili
 
 2. **Navigate to the Project Directory:**
     ```bash
-    cd FinalEX_OOP
+    cd Flight-Management-System
     ```
 
 3. **Compile the Project:**
     ```bash
-    javac -d bin src/OOP_Q1/*.java
+    javac -d bin src/FlightManagementSystem/*.java
     ```
 
 4. **Run the Application:**
     ```bash
-    java -cp bin OOP_Q1.Main
+    java -cp bin FlightManagementSystem.Main
     ```
 
 ## Usage
