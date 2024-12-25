@@ -1,7 +1,5 @@
 # Flight Management System
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
 ## Table of Contents
 - [Description](#description)
 - [Features](#features)
@@ -28,55 +26,18 @@ The **Flight Management System** is a Java-based console application designed fo
 
 ## Design Patterns
 
-### 1. Strategy Pattern
+### Strategy Pattern:
 
-Allows dynamic selection of flight search strategies (e.g., by price, departure time).
+Used for dynamic flight search strategies (e.g., by price, airline).
 
-**Advantages:**
-- **Flexibility**: Change search strategies at runtime without altering existing code.
-- **Extensibility**: Easily add new search strategies.
-- **Maintainability**: Separate algorithms from their usage.
-
-**Example:**
-```java
-public class SearchByPrice implements SearchStrategy {
-    // Implementation for searching flights by price
-}
-```
 
 ### 2. Composite Pattern
 
-Enables the hierarchical organization of airlines and sub-airlines, allowing centralized management of flights.
-
-**Advantages:**
-- **Flexibility**: Easily manage hierarchical structures of airlines.
-- **Extensibility**: Add new airlines or sub-airlines without affecting existing code.
-- **Maintainability**: Uniform treatment of individual airlines and composites.
-
-**Example:**
-```java
-public class Airline {
-    Set<Flight> flights = new HashSet<>();
-    Set<Airline> subAirlines = new HashSet<>();
-    // Methods to add flights and sub-airlines
-}
-```
+Organizes airlines and sub-airlines in a hierarchical structure
 
 ### 3. Observer Pattern
 
-Facilitates real-time notifications to clients about changes in flight details (e.g., price updates, seat availability).
-
-**Advantages:**
-- **Real-time Updates**: Clients receive immediate notifications on flight changes.
-- **Customization**: Clients can subscribe to specific updates.
-- **Efficiency**: Manage and send updates to multiple observers efficiently.
-
-**Example:**
-```java
-public class ObservableFlight extends Flight {
-    // Implementation of Observer pattern
-}
-```
+Notifies clients in real-time about flight updates (e.g., price, seat availability).
 
 ## Installation
 
